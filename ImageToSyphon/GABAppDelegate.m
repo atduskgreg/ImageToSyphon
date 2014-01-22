@@ -65,16 +65,10 @@
     NSBitmapImageRep* imageRep=[[NSBitmapImageRep alloc] initWithData:[anImage TIFFRepresentation]];
     CGImageRef pixelData = [imageRep CGImage];
 
-    //unsigned char *rawData = malloc([anImage size].width * [anImage size].height * 4);
     CGContextRef gtx = CGBitmapContextCreate(NULL, [anImage size].width, [anImage size].height, bitsPerComponent, bytesPerRow, colorSpace, kCGImageAlphaPremultipliedLast);
     
     CGContextDrawImage(gtx, CGRectMake(0, 0, 1132, 994), pixelData);
     CGContextFlush(gtx);
-
-    // ALTERNATIVE GLKTextureLoader LOAD FROM FILE EXPERIMENT
-//    NSString* path = [[NSBundle mainBundle] pathForResource:@"test_map" ofType:@"png"];
-//    NSLog(@"path: %@", path);
-//    GLKTextureInfo* texture = [GLKTextureLoader textureWithContentsOfFile:path options:NULL error:NULL];
 
     GLKTextureInfo* texture = [GLKTextureLoader textureWithCGImage:pixelData options:NULL error:NULL];
 
