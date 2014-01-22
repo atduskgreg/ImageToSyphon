@@ -80,10 +80,10 @@
 
     NSLog(@"texture: %i %ix%i", texture.name, texture.width, texture.height);
     [syphonServer publishFrameTexture:texture.name
-                    textureTarget:GL_TEXTURE_RECTANGLE_EXT
+                    textureTarget:GL_TEXTURE_2D
                       imageRegion:NSMakeRect(0, 0, texture.width, texture.height)
                 textureDimensions:NSMakeSize(texture.width, texture.height)
-                          flipped:NO];
+                          flipped:YES];
     
 }
 
