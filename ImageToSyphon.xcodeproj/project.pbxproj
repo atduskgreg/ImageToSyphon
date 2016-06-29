@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3787C81A188B151800C5718A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3787C819188B151800C5718A /* Cocoa.framework */; };
-		3787C839188B151900C5718A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3787C838188B151900C5718A /* XCTest.framework */; };
-		3787C83A188B151900C5718A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3787C819188B151800C5718A /* Cocoa.framework */; };
-		3787C84E188B173600C5718A /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3787C84D188B173600C5718A /* Syphon.framework */; };
 		37C8B29A188B2B4800148F10 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C8B299188B2B4800148F10 /* GLKit.framework */; };
 		37EF0D69188F3FFA0060C7C3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37EF0D5A188F3FFA0060C7C3 /* MainMenu.xib */; };
 		37EF0D6A188F3FFA0060C7C3 /* ContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EF0D5D188F3FFA0060C7C3 /* ContainerView.m */; };
@@ -21,17 +18,22 @@
 		37EF0D6F188F3FFA0060C7C3 /* ImageToSyphon-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37EF0D65188F3FFA0060C7C3 /* ImageToSyphon-Info.plist */; };
 		37EF0D70188F3FFA0060C7C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EF0D67188F3FFA0060C7C3 /* main.m */; };
 		37EF0D71188F3FFA0060C7C3 /* test_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 37EF0D68188F3FFA0060C7C3 /* test_map.png */; };
+		635BC3161D239FAA00BDFF9E /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635BC3151D239FAA00BDFF9E /* Syphon.framework */; };
+		635BC3181D239FB800BDFF9E /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 635BC3151D239FAA00BDFF9E /* Syphon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3787C83B188B151900C5718A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3787C80E188B151800C5718A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3787C815188B151800C5718A;
-			remoteInfo = SyphonToUnity;
+/* Begin PBXCopyFilesBuildPhase section */
+		635BC3171D239FB000BDFF9E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				635BC3181D239FB800BDFF9E /* Syphon.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3787C816188B151800C5718A /* ImageToSyphon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageToSyphon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,9 +41,6 @@
 		3787C81C188B151800C5718A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		3787C81D188B151800C5718A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3787C81E188B151800C5718A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3787C837188B151900C5718A /* ImageToSyphonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageToSyphonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3787C838188B151900C5718A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		3787C84D188B173600C5718A /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Syphon.framework; path = ../../../../../../../../Library/Frameworks/Syphon.framework; sourceTree = "<group>"; };
 		37C8B299188B2B4800148F10 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		37EF0D5B188F3FFA0060C7C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		37EF0D5C188F3FFA0060C7C3 /* ContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerView.h; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		37EF0D66188F3FFA0060C7C3 /* ImageToSyphon-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImageToSyphon-Prefix.pch"; sourceTree = "<group>"; };
 		37EF0D67188F3FFA0060C7C3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37EF0D68188F3FFA0060C7C3 /* test_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_map.png; sourceTree = "<group>"; };
+		635BC3151D239FAA00BDFF9E /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Syphon.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +63,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				37C8B29A188B2B4800148F10 /* GLKit.framework in Frameworks */,
+				635BC3161D239FAA00BDFF9E /* Syphon.framework in Frameworks */,
 				3787C81A188B151800C5718A /* Cocoa.framework in Frameworks */,
-				3787C84E188B173600C5718A /* Syphon.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3787C834188B151800C5718A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3787C83A188B151900C5718A /* Cocoa.framework in Frameworks */,
-				3787C839188B151900C5718A /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				3787C816188B151800C5718A /* ImageToSyphon.app */,
-				3787C837188B151900C5718A /* ImageToSyphonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,10 +91,9 @@
 		3787C818188B151800C5718A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				635BC3151D239FAA00BDFF9E /* Syphon.framework */,
 				37C8B299188B2B4800148F10 /* GLKit.framework */,
-				3787C84D188B173600C5718A /* Syphon.framework */,
 				3787C819188B151800C5718A /* Cocoa.framework */,
-				3787C838188B151900C5718A /* XCTest.framework */,
 				3787C81B188B151800C5718A /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -149,6 +138,7 @@
 				3787C812188B151800C5718A /* Sources */,
 				3787C813188B151800C5718A /* Frameworks */,
 				3787C814188B151800C5718A /* Resources */,
+				635BC3171D239FB000BDFF9E /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -159,24 +149,6 @@
 			productReference = 3787C816188B151800C5718A /* ImageToSyphon.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3787C836188B151800C5718A /* ImageToSyphonTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3787C84A188B151900C5718A /* Build configuration list for PBXNativeTarget "ImageToSyphonTests" */;
-			buildPhases = (
-				3787C833188B151800C5718A /* Sources */,
-				3787C834188B151800C5718A /* Frameworks */,
-				3787C835188B151800C5718A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3787C83C188B151900C5718A /* PBXTargetDependency */,
-			);
-			name = ImageToSyphonTests;
-			productName = SyphonToUnityTests;
-			productReference = 3787C837188B151900C5718A /* ImageToSyphonTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -186,11 +158,6 @@
 				CLASSPREFIX = GAB;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Greg Borenstein";
-				TargetAttributes = {
-					3787C836188B151800C5718A = {
-						TestTargetID = 3787C815188B151800C5718A;
-					};
-				};
 			};
 			buildConfigurationList = 3787C811188B151800C5718A /* Build configuration list for PBXProject "ImageToSyphon" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -206,7 +173,6 @@
 			projectRoot = "";
 			targets = (
 				3787C815188B151800C5718A /* ImageToSyphon */,
-				3787C836188B151800C5718A /* ImageToSyphonTests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,13 +191,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3787C835188B151800C5718A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -245,22 +204,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3787C833188B151800C5718A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3787C83C188B151900C5718A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3787C815188B151800C5718A /* ImageToSyphon */;
-			targetProxy = 3787C83B188B151900C5718A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		37EF0D5A188F3FFA0060C7C3 /* MainMenu.xib */ = {
@@ -366,6 +310,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageToSyphon/ImageToSyphon-Prefix.pch";
@@ -383,52 +328,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageToSyphon/ImageToSyphon-Prefix.pch";
 				INFOPLIST_FILE = "ImageToSyphon/ImageToSyphon-Info.plist";
 				PRODUCT_NAME = ImageToSyphon;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		3787C84B188B151900C5718A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SyphonToUnity.app/Contents/MacOS/SyphonToUnity";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SyphonToUnity/SyphonToUnity-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "SyphonToUnityTests/ImageToSyphonTests-Info.plist";
-				PRODUCT_NAME = ImageToSyphonTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		3787C84C188B151900C5718A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SyphonToUnity.app/Contents/MacOS/SyphonToUnity";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SyphonToUnity/SyphonToUnity-Prefix.pch";
-				INFOPLIST_FILE = "SyphonToUnityTests/ImageToSyphonTests-Info.plist";
-				PRODUCT_NAME = ImageToSyphonTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -449,15 +355,6 @@
 			buildConfigurations = (
 				3787C848188B151900C5718A /* Debug */,
 				3787C849188B151900C5718A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3787C84A188B151900C5718A /* Build configuration list for PBXNativeTarget "ImageToSyphonTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3787C84B188B151900C5718A /* Debug */,
-				3787C84C188B151900C5718A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
